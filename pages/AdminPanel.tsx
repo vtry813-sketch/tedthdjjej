@@ -14,7 +14,7 @@ import {
   CheckCircle,
   AlertTriangle
 } from 'lucide-react';
-import { User, UserRole, Bot } from '../types';
+import { User, UserRole, Bot } from '../types.ts';
 
 const AdminPanel: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'users' | 'bots' | 'system'>('users');
@@ -192,7 +192,6 @@ const AdminPanel: React.FC = () => {
                  Evacuate Node
               </button>
            </div>
-           {/* ... more global bot management cards ... */}
         </div>
       )}
     </div>

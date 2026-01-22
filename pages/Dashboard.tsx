@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { User, BotStatus } from '../types';
+import { User, BotStatus } from '../types.ts';
 import { 
   Zap, 
   Clock, 
@@ -11,7 +11,6 @@ import {
   Activity,
   Calendar,
   CreditCard,
-  // Fix: Import missing icons to resolve JSX and name errors
   History,
   Gift
 } from 'lucide-react';

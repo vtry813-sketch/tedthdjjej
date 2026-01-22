@@ -1,8 +1,9 @@
 
 import React, { useState } from 'react';
+// Updated imports to use standard v6 Link and useNavigate.
 import { Link, useNavigate } from 'react-router-dom';
 import { Mail, Lock, LogIn, Shield, ArrowRight, Zap, Loader2, AlertCircle } from 'lucide-react';
-import { User, UserRole } from '../types';
+import { User, UserRole } from '../types.ts';
 
 const Login: React.FC<{ onLogin: (user: User) => void }> = ({ onLogin }) => {
   const [email, setEmail] = useState('');

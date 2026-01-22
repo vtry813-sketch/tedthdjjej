@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+// Ensured Link is imported correctly from react-router-dom.
 import { Link } from 'react-router-dom';
 import { Mail, Lock, User as UserIcon, ShieldCheck, ArrowRight, CheckCircle2, Loader2, AlertCircle } from 'lucide-react';
 

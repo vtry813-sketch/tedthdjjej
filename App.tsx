@@ -1,6 +1,15 @@
 
 import React, { useState, useEffect } from 'react';
-import { HashRouter as Router, Routes, Route, Navigate, Link, useLocation } from 'react-router-dom';
+// Changed imports to use BrowserRouter and ensured standard v6 named exports are used.
+// If the environment has issues with specific exports like HashRouter, BrowserRouter is often more widely supported.
+import { 
+  BrowserRouter as Router, 
+  Routes, 
+  Route, 
+  Navigate, 
+  Link, 
+  useLocation 
+} from 'react-router-dom';
 import { 
   LayoutDashboard, 
   Bot as BotIcon, 
@@ -24,15 +33,15 @@ import {
 } from 'lucide-react';
 
 // Pages
-import Dashboard from './pages/Dashboard';
-import Bots from './pages/Bots';
-import CoinStore from './pages/CoinStore';
-import AdminPanel from './pages/AdminPanel';
-import Login from './pages/Login';
-import Register from './pages/Register';
+import Dashboard from './pages/Dashboard.tsx';
+import Bots from './pages/Bots.tsx';
+import CoinStore from './pages/CoinStore.tsx';
+import AdminPanel from './pages/AdminPanel.tsx';
+import Login from './pages/Login.tsx';
+import Register from './pages/Register.tsx';
 
 // Types
-import { User, UserRole } from './types';
+import { User, UserRole } from './types.ts';
 
 // Mock Auth State (In production this would use JWT and context)
 const INITIAL_USER: User = {
@@ -164,8 +173,10 @@ const App: React.FC = () => {
   );
 };
 
-export default () => (
+const WrappedApp = () => (
   <Router>
     <App />
   </Router>
 );
+
+export default WrappedApp;

@@ -1,8 +1,5 @@
 {
   "name": "BotCloud SaaS Platform",
   "description": "A high-performance deployment platform for Node.js bots featuring Git/ZIP deployment, a robust coin-based economy, real-time logging, and an advanced admin control panel.",
-  "requestFramePermissions": [
-    "camera",
-    "microphone"
-  ]
+  "requestFramePermissions": []
 }

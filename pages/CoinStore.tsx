@@ -11,7 +11,7 @@ import {
   CheckCircle2,
   AlertCircle
 } from 'lucide-react';
-import { User, Transaction } from '../types';
+import { User, Transaction } from '../types.ts';
 
 const TransactionItem = ({ tx }: { tx: Transaction }) => {
   const isPositive = tx.amount > 0;
