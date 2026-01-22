@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BotCloud | Deploy & Scale</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+        .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); }
+        .status-running { @apply bg-green-500/20 text-green-400 border border-green-500/30; }
+        .status-stopped { @apply bg-red-500/20 text-red-400 border border-red-500/30; }
+        .status-expired { @apply bg-yellow-500/20 text-yellow-400 border border-yellow-500/30; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.12.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "helmet": "https://esm.sh/helmet@^8.1.0",
+    "express-rate-limit": "https://esm.sh/express-rate-limit@^8.2.1",
+    "process": "https://esm.sh/process@^0.11.10",
+    "cors": "https://esm.sh/cors@^2.8.5",
+    "express": "https://esm.sh/express@^5.2.1",
+    "path": "https://esm.sh/path@^0.12.7",
+    "fs-extra": "https://esm.sh/fs-extra@^11.3.3",
+    "execa": "https://esm.sh/execa@^9.6.1",
+    "ws": "https://esm.sh/ws@^8.18.0",
+    "http": "https://esm.sh/http@^0.0.1-security",
+    "multer": "https://esm.sh/multer@^1.4.5-lts.1",
+    "adm-zip": "https://esm.sh/adm-zip@^0.5.10",
+    "mongoose": "https://esm.sh/mongoose@^8.10.1",
+    "bcryptjs": "https://esm.sh/bcryptjs@^2.4.3",
+    "jsonwebtoken": "https://esm.sh/jsonwebtoken@^9.0.2"
+  }
+}
+</script>
+</head>
+<body class="bg-[#0f1117] text-gray-100 min-h-screen">
+    <div id="root"></div>
+</body>
+</html>
